@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+    <title>Admin Panel</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+              
+                <h2><label for="bank"><i class="fas fa-bank"></i></label>SBI</h2>
+                </div>
+                <div class="search">
+                    <input type="text" id="search" placeholder="search here">
+                    <label for="search"><i class="fas fa-search"></i></label>
+                    
+                </div>
+                <i class="fas fa-bell"></i>
+                <div class="user">
+                    <img src="img/user.png" alt="">
+                </div>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#"><i class="fas fa-th-large"></i><div>Dashboard</div></a></li>
+      <li><a href="#"><i class="fas fa-exchange-alt"></i><div>Transactions</div></a></li>
+      <li><a href="#"><i class="fas fa-user"></i><div>Account</div></a></li>
+      <li><a href="#"><i class="fas fa-chart-line"></i><div>Investments</div></a></li>
+      <li><a href="#"><i class="fas fa-credit-card"></i><div>Credit Cards</div></a></li>
+      <li><a href="#"><i class="fas fa-university"></i><div>Loans</div></a></li>
+      <li><a href="#"><i class="fas fa-concierge-bell"></i><div>Services</div></a></li>
+      <li><a href="#"><i class="fas fa-gift"></i><div>My Privileges</div></a></li>
+      <li><a href="#"><i class="fas fa-cog"></i><div>Settings</div></a></li>
+      <li><a href="#"><i class="fas fa-question"></i><div>Help</div></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+          <div class="card-content">
+            <div class="number">456</div>
+            <div class="card-name">Transactions</div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="number">789</div>
+            <div class="card-name">Accounts</div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="number">1012</div>
+            <div class="card-name">Investments</div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-chart-line"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="number">108</div>
+            <div class="card-name">Credit Cards</div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-credit-card"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="number">102</div>
+            <div class="card-name">Loans</div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-university"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="number">104</div>
+            <div class="card-name">Services</div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-concierge-bell"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="number">103</div>
+            <div class="card-name">My Privileges</div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-gift"></i>
+          </div>
+        </div>
+            <div class="charts">
+                <div class="chart">
+                    <h2>My Privileges</h2>
+                      <canvas id="lineChart"></canvas>
+
+                </div>
+                <div class="chart" id="doughnut-chart">
+                <h2>Loans</h2>
+                <canvas id="doughnut"></canvas>
+</div>
+            </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="chart1.js"></script>
+<script src="chart2.js"></script>
+
+</body>
+</html>
