@@ -1,0 +1,37 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-content .number {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1a237e;
+}
+
+.card-content .card-name {
+  font-size: 14px;
+  color: #666;
+}
+
+.icon-box {
+  font-size: 28px;
+  color: #1a237e;
+}
